@@ -42,6 +42,7 @@
                 <div>
                     <h3 class="font-semibold text-3xl mb-5">Kitchenware</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                        <!-- First Product -->
                         <div id="product-one" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod1.png" alt="product" />
@@ -56,11 +57,12 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
                                 <h2 id="product-one-name" class="card-title">K. Accessories</h2>
-                                <h4>39.00 TK</h4>
+                                <h4><span id="product-one-price">39.00</span> TK</h4>
                             </div>
                         </div>
 
-                        <div class="card bg-white hover:outline hover:outline-slate-300 duration-75">
+                        <!-- Product Two -->
+                        <div id="product-two" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod2.png" alt="product" />
                             </div>
@@ -73,11 +75,12 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h2 class="card-title">K. Accessories</h2>
-                                <h4>25.00 TK</h4>
+                                <h2 id="product-two-name" class="card-title">K. Accessories</h2>
+                                <h4><span id="product-two-price">25.00</span> TK</h4>
                             </div>
                         </div>
-                        <div class="card bg-white hover:outline hover:outline-slate-300 duration-75">
+                        <!-- Product Three -->
+                        <div id="product-three" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod3.png" alt="product" />
                             </div>
@@ -90,8 +93,8 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h2 class="card-title">Home Cooker</h2>
-                                <h4>49.00 TK</h4>
+                                <h2 id="product-three-name" class="card-title">Home Cooker</h2>
+                                <h4><span id="product-three-price">49.00</span> TK</h4>
                             </div>
                         </div>
                     </div>
@@ -100,7 +103,7 @@
                 <div>
                     <h3 class="font-semibold text-3xl mb-5">Sportswear</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                        <div class="card bg-white hover:outline hover:outline-slate-300 duration-75">
+                        <div id="product-four" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod4.png" alt="product" />
                             </div>
@@ -113,12 +116,12 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h2 class="card-title">Sports Back Cap</h2>
-                                <h4>49.00 TK</h4>
+                                <h2 id="product-four-name" class="card-title">Sports Back Cap</h2>
+                                <h4><span id="product-four-price">49.00</span> TK</h4>
                             </div>
                         </div>
 
-                        <div class="card bg-white hover:outline hover:outline-slate-300 duration-75">
+                        <div id="product-five" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod5.png" alt="product" />
                             </div>
@@ -131,11 +134,11 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h2 class="card-title">Full Jersey Set</h2>
-                                <h4>69.00 TK</h4>
+                                <h2 id="product-five-name" class="card-title">Full Jersey Set</h2>
+                                <h4><span id="product-five-price">69.00</span> TK</h4>
                             </div>
                         </div>
-                        <div class="card bg-white hover:outline hover:outline-slate-300 duration-75">
+                        <div id="product-six" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod6.png" alt="product" />
                             </div>
@@ -148,8 +151,8 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h2 class="card-title">Sports Shoe</h2>
-                                <h4>159.00 TK</h4>
+                                <h2 id="product-six-name" class="card-title">Sports Shoe</h2>
+                                <h4><span id="product-six-price">159.00</span> TK</h4>
                             </div>
                         </div>
                     </div>
@@ -158,9 +161,8 @@
             <div class="lg:w-[250px] space-y-5">
                 <div class="bg-white rounded-lg p-5">
                     <h3 class="text-xl font-semibold mb-2">Have coupon?</h3>
-                    <input class="border focus:outline-none lg:w-2/3 p-1 rounded-l-md" placeholder="Coupon Code"
-                        type="text"><button
-                        class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 lg:w-1/3 text-white rounded-r-md p-1 border border-[#E527B2]">Apply</button>
+                    <input id="coupon-field" class="border focus:outline-none lg:w-2/3 p-1 rounded-l-md" placeholder="Coupon Code"
+                        type="text"><button id="apply-btn" class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 lg:w-1/3 text-white rounded-r-md p-1 border border-[#E527B2] disabled:bg-pink-800 disabled:border-pink-800" disabled >Apply</button>
                 </div>
                 <div class="bg-white rounded-lg p-5">
                     <ol id="cart-list" class="list-decimal list-inside">
@@ -196,8 +198,9 @@
         </section>
     </main>
 
+    <script src="js/coupon.js"></script>
     <script src="js/utility.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/addToCart.js"></script>
 </body>
 
 </html>
