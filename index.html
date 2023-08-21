@@ -178,8 +178,8 @@
                     <!-- The button to open modal -->
                     <div class="text-center mt-5">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button
-                            class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 text-white font-semibold rounded-md p-3 border border-[#E527B2]"
+                        <button id="make-purchase-btn"
+                            class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 text-white font-semibold rounded-md p-3 border border-[#E527B2] disabled:bg-pink-800 disabled:border-pink-800" disabled
                             onclick="my_modal_1.showModal()">Make Purchase</button>
                         <dialog id="my_modal_1" class="modal px-5">
                             <form method="dialog" class="bg-white flex py-5 rounded-lg px-10 flex-col lg:py-10 lg:px-20">
@@ -198,9 +198,10 @@
         </section>
     </main>
 
-    <script src="js/coupon.js"></script>
-    <script src="js/utility.js"></script>
     <script src="js/addToCart.js"></script>
+    <script src="js/coupon.js"></script>
+    <script src="js/makePurchase.js"></script>
+    <script src="js/utility.js"></script>
 </body>
 
 </html>
