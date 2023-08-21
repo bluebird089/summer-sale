@@ -1,9 +1,3 @@
-const totalPrice = getTextValueById('total-price');
-
-const makePurchaseButton = document.getElementById('make-purchase-btn');
-if (totalPrice > 0) {
-    makePurchaseButton.removeAttribute('disabled');
-}
-else {
-    makePurchaseButton.setAttribute('disabled', true);
-}
+document.getElementById('reset-btn').addEventListener('click', function(){
+    window.location.href = 'index.html';
+});

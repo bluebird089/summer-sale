@@ -8,7 +8,15 @@ document.getElementById('product-one').addEventListener('click', function () {
     const firstProductPrice = getTextValueById('product-one-price');
     const totalPrice = getTextValueById('total-price');
 
+    const makePurchaseButton = document.getElementById('make-purchase-btn');
     const currentTotal = (totalPrice + firstProductPrice).toFixed(2);
+
+    if (currentTotal > 0) {
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else {
+        makePurchaseButton.setAttribute('disabled', true);
+    };
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
@@ -25,6 +33,13 @@ document.getElementById('product-two').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     const currentTotal = (totalPrice + secondProductPrice).toFixed(2);
+    const makePurchaseButton = document.getElementById('make-purchase-btn');
+    if (currentTotal > 0) {
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else {
+        makePurchaseButton.setAttribute('disabled', true);
+    };
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
@@ -41,6 +56,13 @@ document.getElementById('product-three').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     const currentTotal = (totalPrice + thirdProductPrice).toFixed(2);
+    const makePurchaseButton = document.getElementById('make-purchase-btn');
+    if (currentTotal > 0) {
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else {
+        makePurchaseButton.setAttribute('disabled', true);
+    };
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
@@ -57,6 +79,13 @@ document.getElementById('product-four').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     const currentTotal = (totalPrice + forthProductPrice).toFixed(2);
+    const makePurchaseButton = document.getElementById('make-purchase-btn');
+    if (currentTotal > 0) {
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else {
+        makePurchaseButton.setAttribute('disabled', true);
+    };
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
@@ -73,6 +102,13 @@ document.getElementById('product-five').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     const currentTotal = (totalPrice + fifthProductPrice).toFixed(2);
+    const makePurchaseButton = document.getElementById('make-purchase-btn');
+    if (currentTotal > 0) {
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else {
+        makePurchaseButton.setAttribute('disabled', true);
+    };
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
@@ -89,6 +125,13 @@ document.getElementById('product-six').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     const currentTotal = (totalPrice + sixProductPrice).toFixed(2);
+    const makePurchaseButton = document.getElementById('make-purchase-btn');
+    if (currentTotal > 0) {
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else {
+        makePurchaseButton.setAttribute('disabled', true);
+    };
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
