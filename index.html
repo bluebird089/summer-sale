@@ -42,7 +42,7 @@
                 <div>
                     <h3 class="font-semibold text-3xl mb-5">Kitchenware</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                        <div class="card bg-white hover:outline hover:outline-slate-300 duration-75">
+                        <div id="product-one" class="card bg-white hover:outline hover:outline-slate-300 duration-75">
                             <div class="m-5 p-5 bg-slate-200 flex items justify-center">
                                 <img src="/images/prod1.png" alt="product" />
                             </div>
@@ -55,7 +55,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h2 class="card-title">K. Accessories</h2>
+                                <h2 id="product-one-name" class="card-title">K. Accessories</h2>
                                 <h4>39.00 TK</h4>
                             </div>
                         </div>
@@ -158,19 +158,46 @@
             <div class="lg:w-[250px] space-y-5">
                 <div class="bg-white rounded-lg p-5">
                     <h3 class="text-xl font-semibold mb-2">Have coupon?</h3>
-                    <input class="border focus:outline-none lg:w-2/3 p-1 rounded-l-md" placeholder="Coupon Code" type="text"><button class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 lg:w-1/3 text-white rounded-r-md p-1 border border-[#E527B2]">Apply</button>
+                    <input class="border focus:outline-none lg:w-2/3 p-1 rounded-l-md" placeholder="Coupon Code"
+                        type="text"><button
+                        class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 lg:w-1/3 text-white rounded-r-md p-1 border border-[#E527B2]">Apply</button>
                 </div>
                 <div class="bg-white rounded-lg p-5">
-                    <p>No Items Selected Yet</p>
-                    <div class="bg-slate-300 h-[1px] w-full mx-auto"></div>
-                    <p>Total Price: <span></span></p>
-                    <p>Discount: <span></span></p>
-                    <p>Total: <span></span></p>
-                    <div class="bg-slate-300 h-[1px] w-full mx-auto"></div>
+                    <ol id="cart-list" class="list-decimal list-inside">
+                        <p id="nothing-added">Nothing Added Yet</p>
+                    </ol>
+                    <div class="bg-slate-300 h-[1px] w-full mx-auto my-2"></div>
+                    <p>Total Price: <span id="total-price">00.00</span>TK</p>
+
+                    <p>Discount: <span id="discount">00.00</span>TK</p>
+
+                    <p>Total: <span id="total">00</span>TK</p>
+                    <div class="bg-slate-300 h-[1px] w-full mx-auto my-2"></div>
+                    <!-- The button to open modal -->
+                    <div class="text-center mt-5">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button
+                            class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 text-white font-semibold rounded-md p-3 border border-[#E527B2]"
+                            onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal px-5">
+                            <form method="dialog" class="bg-white flex py-5 rounded-lg px-10 flex-col lg:py-10 lg:px-20">
+                                <img src="images/congo.png" alt="">
+                                <h3 class="font-bold text-3xl">Congratulations</h3>
+                                <p class="py-4">You Have Purchased The Product</p>
+                                <div>
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="bg-[#E527B2] hover:bg-pink-700 hover:border-pink-700 text-white font-semibold rounded-md p-3 border border-[#E527B2]">Go Home</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="js/utility.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
