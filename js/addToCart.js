@@ -125,13 +125,15 @@ document.getElementById('product-six').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     const currentTotal = (totalPrice + sixProductPrice).toFixed(2);
-    const makePurchaseButton = document.getElementById('make-purchase-btn');
-    if (currentTotal > 0) {
-        makePurchaseButton.removeAttribute('disabled');
+
+    const applyButton = document.getElementById('apply-btn');
+    if (currentTotal > 200) {
+        alert('Please Spend More Than 200 TK To Avail Discount');
+        return;
     }
     else {
-        makePurchaseButton.setAttribute('disabled', true);
-    };
+        applyButton.setAttribute('disabled', true);
+    }
 
     setElementText('total-price', currentTotal);
     setElementText('total', currentTotal);
