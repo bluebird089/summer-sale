@@ -12,7 +12,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     const totalPrice = getTextValueById('total-price');
 
     if(totalPrice < 200){
-        alert('Please Spend 200 TK To Avail Discount');
+        alert('Please Spend 200 TK Or More To Avail Discount');
         document.getElementById('coupon-field').innerText = '';
         return;
     }
